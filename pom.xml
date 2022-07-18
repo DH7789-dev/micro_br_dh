@@ -12,6 +12,7 @@
 	<groupId>com.esgi</groupId>
 	<artifactId>micro_br_dh</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>micro_br_dh</name>
 	<description>microservice</description>
 	<properties>
@@ -19,6 +20,13 @@
 		<docker.image.prefix>micro_br_dh</docker.image.prefix>
 	</properties>
 
+	<modules>
+		<module>GatewayServer</module>
+		<module>ConfigurationServer</module>
+		<module>BillingService</module>
+		<module>ContractService</module>
+		<module>EurekaServer</module>
+	</modules>
 	<build>
 		<plugins>
 			<plugin>
